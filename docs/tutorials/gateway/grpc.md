@@ -89,7 +89,7 @@ go-zero sdk 版本 v1.5.0 的 gateway 配置会造成配置冲突，请避开此
 
 1. 我们新建一个工程 demo1, 在 demo1 中新建一个 hello.proto 文件，如下：
 
- ```protobuf
+```protobuf
 syntax = "proto3";
 
 package hello;
