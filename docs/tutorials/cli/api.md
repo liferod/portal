@@ -43,7 +43,7 @@ Use "goctl api [command] --help" for more information about a command.
 | <img width={100}/> 参数字段 | <img width={150}/> 参数类型 |<img width={200}/> 是否必填 | <img width={200}/> 默认值 | <img width={800}/> 参数说明 |
 | --- | --- | --- | --- | --- |
 | branch | string | NO | 空字符串 | 模板仓库分支，配合 --remote 使用 |
-| home | string | NO | `~/.goctl` | 模板仓库本地路径，优先级高于 --remote |
+| home | string | NO | `~/.goctl` | 模板仓库本地路径，优先级低于 --remote |
 | o | string | NO | 空字符串 | 输出 api 文件 |
 | remote | string | NO | 空字符串 | 模板仓库远程路径 |
 

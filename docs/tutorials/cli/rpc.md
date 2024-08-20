@@ -37,7 +37,7 @@ Use "goctl rpc [command] --help" for more information about a command.
 | <img width={100}/> 参数字段 | <img width={150}/> 参数类型 | <img width={200}/> 是否必填 | <img width={200}/> 默认值 | <img width={800}/> 参数说明           |
 | --------------------------- | --------------------------- | --------------------------- | ------------------------- | ------------------------------------- |
 | branch                      | string                      | NO                          | 空字符串                  | 模板仓库分支，配合 --remote 使用      |
-| home                        | string                      | NO                          | `~/.goctl`                | 模板仓库本地路径，优先级高于 --remote |
+| home                        | string                      | NO                          | `~/.goctl`                | 模板仓库本地路径，优先级低于 --remote |
 | o                           | string                      | NO                          | 空字符串                  | 输出 api 文件                         |
 | remote                      | string                      | NO                          | 空字符串                  | 模板仓库远程路径                      |
 
@@ -72,7 +72,7 @@ Flags:
 | <img width={100}/> 参数字段 | <img width={150}/> 参数类型 | <img width={200}/> 是否必填 | <img width={200}/> 默认值 | <img width={800}/> 参数说明                                                               |
 | --------------------------- | --------------------------- | --------------------------- | ------------------------- | ----------------------------------------------------------------------------------------- |
 | branch                      | string                      | NO                          | 空字符串                  | 模板仓库分支，配合 --remote 使用                                                          |
-| home                        | string                      | NO                          | `~/.goctl`                | 模板仓库本地路径，优先级高于 --remote                                                     |
+| home                        | string                      | NO                          | `~/.goctl`                | 模板仓库本地路径，优先级低于 --remote                                                     |
 | idea                        | bool                        | NO                          | false                     | 仅 idea 插件用，终端请忽略此字段                                                          |
 | remote                      | string                      | NO                          | 空字符串                  | 模板仓库远程路径                                                                          |
 | style                       | string                      | NO                          | gozero                    | 文件命名风格，详情可参考 <a href="/docs/tutorials/cli/style" target="_blank">文件风格</a> |
@@ -111,7 +111,7 @@ Usage:
 | <img width={100}/> 参数字段 | <img width={150}/> 参数类型     | <img width={200}/> 是否必填 | <img width={200}/> 默认值 | <img width={800}/> 参数说明                                                   |
 |-------------------------|-----------------------------| --------------------------- |------------------------|---------------------------------------------------------------------------|
 | branch                  | string                      | NO                          | 空字符串                   | 模板仓库分支，配合 --remote 使用                                                     |
-| home                    | string                      | NO                          | `~/.goctl`             | 模板仓库本地路径，优先级高于 --remote                                                   |
+| home                    | string                      | NO                          | `~/.goctl`             | 模板仓库本地路径，优先级低于 --remote                                                   |
 | client                  | bool                        | NO                          | true                   | 是否生成客户端代码                                                                 |
 | multiple                | bool                        | NO                          | false                  | 是否生成多个 rpc 服务                                                             |
 | remote                  | string                      | NO                          | 空字符串                   | 模板仓库远程路径                                                                  |
@@ -175,7 +175,7 @@ Flags:
 | <img width={100}/> 参数字段 | <img width={150}/> 参数类型 | <img width={200}/> 是否必填 | <img width={200}/> 默认值 | <img width={800}/> 参数说明           |
 | --------------------------- | --------------------------- | --------------------------- | ------------------------- | ------------------------------------- |
 | branch                      | string                      | NO                          | 空字符串                  | 模板仓库分支，配合 --remote 使用      |
-| home                        | string                      | NO                          | `~/.goctl`                | 模板仓库本地路径，优先级高于 --remote |
+| home                        | string                      | NO                          | `~/.goctl`                | 模板仓库本地路径，优先级低于 --remote |
 | o                           | string                      | NO                          | 空字符串                  | 输出文件路径                          |
 | remote                      | string                      | NO                          | 空字符串                  | 模板仓库远程路径                      |
 
