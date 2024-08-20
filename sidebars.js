@@ -414,6 +414,14 @@ module.exports = {
                 'faq/log/fileconsole',
             ],
         },
+        {
+            type: 'category',
+            label: '部署',
+            collapsed: false,
+            items: [
+                'faq/deploy/binary-size',
+            ],
+        },
     ],
     contributing: [
         'contributing',
