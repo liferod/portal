@@ -12,6 +12,7 @@
     "docusaurus": "docusaurus",
     "serve": "docusaurus serve",
     "start": "docusaurus start",
+    "start-en": "docusaurus start --locale en",
     "swizzle": "docusaurus swizzle --danger"
   },
   "browserslist": {

@@ -22,5 +22,9 @@
   "item.label.贡献": {
     "message": "Contributions",
     "description": "Navbar item with label 贡献"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
   }
 }

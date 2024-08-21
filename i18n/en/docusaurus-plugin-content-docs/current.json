@@ -134,5 +134,77 @@
   "sidebar.tutorials.category.定制化": {
     "message": "Customization",
     "description": "The label for category 定制化 in sidebar tutorials"
+  },
+  "sidebar.tasks.category.gRPC 开发": {
+    "message": "gRPC Dev",
+    "description": "The label for category gRPC 开发 in sidebar tasks"
+  },
+  "sidebar.tasks.category.Server 开发": {
+    "message": "Server Dev",
+    "description": "The label for category Server 开发 in sidebar tasks"
+  },
+  "sidebar.tasks.category.Client 开发": {
+    "message": "Client Dev",
+    "description": "The label for category Client 开发 in sidebar tasks"
+  },
+  "sidebar.tasks.category.数据库操作": {
+    "message": "DB Operations",
+    "description": "The label for category 数据库操作 in sidebar tasks"
+  },
+  "sidebar.tasks.category.MySQL": {
+    "message": "MySQL",
+    "description": "The label for category MySQL in sidebar tasks"
+  },
+  "sidebar.tasks.category.MongoDB": {
+    "message": "MongoDB",
+    "description": "The label for category MongoDB in sidebar tasks"
+  },
+  "sidebar.tasks.category.Redis": {
+    "message": "Redis",
+    "description": "The label for category Redis in sidebar tasks"
+  },
+  "sidebar.tutorials.category.gRPC": {
+    "message": "gRPC",
+    "description": "The label for category gRPC in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Server": {
+    "message": "Server",
+    "description": "The label for category Server in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Client": {
+    "message": "Client",
+    "description": "The label for category Client in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.数据库": {
+    "message": "Database",
+    "description": "The label for category 数据库 in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.MongoDB": {
+    "message": "MongoDB",
+    "description": "The label for category MongoDB in sidebar tutorials"
+  },
+  "sidebar.components.category.限流器": {
+    "message": "Limiter",
+    "description": "The label for category 限流器 in sidebar components"
+  },
+  "sidebar.components.category.日志": {
+    "message": "Log",
+    "description": "The label for category 日志 in sidebar components"
+  },
+  "sidebar.components.category.并发组件": {
+    "message": "Concurrent Component",
+    "description": "The label for category 并发组件 in sidebar components"
+  },
+  "sidebar.faq.category.HTTP": {
+    "message": "HTTP",
+    "description": "The label for category HTTP in sidebar faq"
+  },
+  "sidebar.faq.category.日志": {
+    "message": "Log",
+    "description": "The label for category 日志 in sidebar faq"
+  },
+  "sidebar.faq.category.部署": {
+    "message": "Deployment",
+    "description": "The label for category 部署 in sidebar faq"
   }
 }
