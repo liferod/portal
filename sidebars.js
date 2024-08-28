@@ -127,6 +127,14 @@ module.exports = {
         },
         {
             type: 'category',
+            label: '配置中心',
+            collapsed: false,
+            items: [
+                'tasks/configcenter',
+            ],
+        },
+        {
+            type: 'category',
             label: '队列',
             collapsed: false,
             items: [
