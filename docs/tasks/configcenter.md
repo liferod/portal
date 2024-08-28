@@ -4,7 +4,7 @@ sidebar_label: 配置中心
 slug:  /docs/tasks/configcenter
 ---
 
-go-zero 即将在新版本(v1.7.1)中支持配置中心功能, 本文提前介绍下配置中心的简单使用，使用注意事项和特点介绍。代码 [pr](https://github.com/zeromicro/go-zero/pull/3035).
+go-zero 即将在新版本(v1.7.1)中支持配置中心功能, 本文提前介绍下配置中心的简单使用，使用注意事项和特点介绍。代码 https://github.com/zeromicro/go-zero/pull/3035.
 
 ## 使用demo
 
@@ -24,12 +24,10 @@ type TestSt struct {
 
 func main() {
         // 创建 etcd subscriber
-        ss := subscriber.MustNewEtcdSubscriber(subscriber.EtcdConfig{
-                EtcdConf: discov.EtcdConf{
-                        Hosts: []string{"localhost:2379"}, // etcd 地址
-                        Key:   "test1",    // 配置key
-                },
-        })
+        ss := subscriber.MustNewEtcdSubscriber(subscriber.EtcdConf{
+            Hosts: []string{"localhost:2379"}, // etcd 地址
+            Key:   "test1",    // 配置key
+       })
         
         // 创建 configurator
         cc := configurator.MustNewConfigCenter[TestSt](configurator.Config{
@@ -66,11 +64,9 @@ func main() {
     ```go
     func main() {
             // 创建 etcd subscriber
-            ss := subscriber.MustNewEtcdSubscriber(subscriber.EtcdConfig{
-                    EtcdConf: discov.EtcdConf{
-                            Hosts: []string{"localhost:2379"}, // etcd 地址
-                            Key:   "test1",    // 配置key
-                    },
+            ss := subscriber.MustNewEtcdSubscriber(subscriber.EtcdConf{
+                Hosts: []string{"localhost:2379"}, // etcd 地址
+                Key:   "test1",    // 配置key
             })
             
             // 创建 configurator

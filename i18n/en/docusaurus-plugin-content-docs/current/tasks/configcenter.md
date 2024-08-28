@@ -4,7 +4,7 @@ sidebar_label: config center
 slug:  /docs/tasks/configcenter
 ---
 
-Go-zero will soon support the configuration center function in the new version (v1.7.1). This article introduces the simple use of the configuration center in advance, and introduces the use precautions and characters. code [pr](https://github.com/zeromicro/go-zero/pull/3035).
+Go-zero will soon support the configuration center function in the new version (v1.7.1). This article introduces the simple use of the configuration center in advance, and introduces the use precautions and characters. code https://github.com/zeromicro/go-zero/pull/3035.
 
 ## Demo
 
@@ -24,11 +24,9 @@ type TestSt struct {
 
 func main() {
         // 创建 etcd subscriber
-        ss := subscriber.MustNewEtcdSubscriber(subscriber.EtcdConfig{
-                EtcdConf: discov.EtcdConf{
-                        Hosts: []string{"localhost:2379"}, // ETCD address
-                        Key:   "test1",    // Configuration key
-                },
+        ss := subscriber.MustNewEtcdSubscriber(subscriber.EtcdConf{
+            Hosts: []string{"localhost:2379"}, // ETCD address
+            Key:   "test1",    // Configuration key
         })
         
         // Create configurator
@@ -66,11 +64,9 @@ func main() {
     ```go
     func main() {
             // Create etcd subscriber
-            ss := subscriber.MustNewEtcdSubscriber(subscriber.EtcdConfig{
-                    EtcdConf: discov.EtcdConf{
-                            Hosts: []string{"localhost:2379"}, // ETCD address
-                            Key:   "test1",    // Configuration key
-                    },
+            ss := subscriber.MustNewEtcdSubscriber(subscriber.EtcdConf{
+                Hosts: []string{"localhost:2379"}, // ETCD address
+                Key:   "test1",    // Configuration key
             })
             
             // Create configurator
