@@ -176,15 +176,15 @@ func main() {
 	var c config.Config
 	conf.MustLoad(*configFile, &c)
  
-	# 需要通过的域名，这里可以写多个域名
-	domains := []string{"http://127.0.0.1:8848", "https://go-zero.dev", "http://localhost:8848"}
+	# 需要通过的域名，这里可以写多个域名 或者可以写 * 全部通过
+	domains := []string{"*","http://127.0.0.1", "https://go-zero.dev", "http://localhost"}
 	server := rest.MustNewServer(
 		c.RestConf,
 		rest.WithCors(domains...),
 		rest.WithCustomCors(func(header http.Header) {
 			# 这里写允许通过的header key 不区分大小写
-			header.Add("Access-Control-Allow-Headers", "Content-Type,AccessToken,X-CSRF-Token, Authorization, Token,X-Token,X-User-Id, OS, Platform, Version, os, PLATFORM, version")
-			header.Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH")
+			header.Add("Access-Control-Allow-Headers", "Content-Type,AccessToken,X-CSRF-Token,Authorization,Token,X-Token,X-User-Id,OS,Platform, Version")
+			header.Set("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS,PATCH")
 			header.Set("Access-Control-Expose-Headers", "Content-Length, Content-Type")
 		}, nil, "*"),
 	)
