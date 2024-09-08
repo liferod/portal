@@ -12,7 +12,10 @@ goctl docker 命令用于生成 Dockerfile 文件，用于构建 Docker 镜像�
 ```bash
 $ goctl docker --help
 Generate Dockerfile
+To generate a Dockerfile for your project:
 
+1. Navigate to the directory containing your `go.mod` file.
+2. Run the following command:
 Usage:
   goctl docker [flags]
 
@@ -82,7 +85,7 @@ $ tree
 
 7 directories, 10 files
 
-# 生成 Dockerfile 文件
+# 生成 Dockerfile 文件 应在 go.mod目录中执行
 $ goctl docker --go hello.go --exe hello
 Hint: run "docker build ..." command in dir:
     /Users/keson/hello
