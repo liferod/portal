@@ -19,3 +19,6 @@ goctl api 提供了 plugin 命令来支持对 api 进行功能扩展，当 goctl
 
 - [goctl-php](https://github.com/zeromicro/goctl-php)
   goctl-php 是一款基于 goctl 的插件，用于生成 php 调用端（服务端） http server 请求代码
+
+- [goctl-helper](https://plugins.jetbrains.com/plugin/25693-goctl-helper)
+  goctl-helper 是一款基于 goland 的插件，用于生成简单的api protobuf文件
