@@ -16,15 +16,3 @@ goctl 读音为 go control [ɡō kənˈtrōl]，它的主要功能是帮助开�
       src={require('../../resource/tutorials/cli/goctl.png').default}
       alt='goctl'
 />
-
-## goctl 视频教程
-
-:::note 温馨提示
-此视频教程非官方出品，仅供参考。
-:::
-
-<a href="https://www.bilibili.com/video/BV1Fr4y177Jf?t=2.9" alt="goctl 视频教程">
-
-![goctl_cover](../../resource/tutorials/cli/goctl_cover.png)
-
-</a>
